@@ -1,9 +1,7 @@
 'use strict';
 
-import React, {
-  Component,
-  PropTypes,
-} from 'react';
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import ReactNative, {
   StyleSheet,
   View,
@@ -90,7 +88,7 @@ export default class SectionList extends Component {
     this.fixSectionItemMeasure();
   }
 
-  // fix bug when change data 
+  // fix bug when change data
   componentDidUpdate() {
     this.fixSectionItemMeasure();
   }
